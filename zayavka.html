@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Бобруйская ПМК</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/html6.css" rel="stylesheet" type="text/css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/selectnav.js"></script>
+    <script src="js/ender.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/booking.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('#datepicker').datepicker();
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <div class="inner">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+        </div>
+
+
+        <div id="mainourservice-container">
+            <ul id="mainourservice">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Наши работы</a></li>
+                <li><a href="zayavka.html">Обратная связь</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="subheader">
+        <h1>Обратная форма связи</h1>
+    </div>
+
+
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="span8">
+                    <div class="contact_form_holder">
+                        <form id="contact" class="row" name="form1" method="post" action="#">
+
+                            <div class="span4">
+                                <label>Имя</label>
+                                <input type="text" class="full" name="name" id="name" />
+                            </div>
+
+                            <div class="span4">
+                                <label>Email <span class="req">*</span></label>
+                                <input type="text" class="full" name="email" id="email" />
+                                <div id="error_email" class="error">Пожалуйста, введите Email!</div>
+                            </div>
+
+                            <div class="span4">
+                                <label>Когда с Вами можно связаться? <span class="req">*</span></label>
+                                <input type="text" class="full" name="datepicker" id="datepicker" />
+                                <div id="error_datepicker" class="error">Попробуйте еще раз!</div>
+                            </div>
+
+                            <div class="span4">
+                                <label>Краткое описание работы <span class="req">*</span></label>
+                                <input type="text" class="full" name="person_num" id="person_num" />
+                                <div id="error_person_num" class="error">Еще раз!</div>
+                            </div>
+
+                            <div class="span8">
+                                <label>Сообщение</label>
+                                <textarea cols="10" rows="10" name="message" id="message" class="full"></textarea>
+                                <div id="error_message" class="error">Введите сообщение</div>
+                                <div id="mail_success" class="success">Спасибо, отправлено!</div>
+                                <div id="mail_failed" class="error">Ошибка!</div>
+
+                                <p id="btnsubmit">
+                                    <input type="submit" id="send" value="Отправить" class="btn btn-large" />
+                                </p>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+
+                <div id="sidebar" class="span4">
+                    <div class="widget widget-opening-hours">
+                        <h4 class="title"><span>Время работы</span></h4>
+                        <ul class="opening-hours">
+                            <li><span class="op-days">Понедельник - Пятница</span><span class="op-time">08:00 -
+                                    17:00</span></li>
+                            <li><span class="op-days">Обеденный перерыв</span><span class="op-time">12:00 - 13:00</span>
+                            </li>
+                            <li><span class="op-days">Суббота - Воскресенье</span><span class="op-time">Выходной</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="widget widget-text">
+                        <h4 class="title"><span>Мы находимся</span></h4>
+                        <address>
+                            Могилевская обл, г. Бобруйск, ул. Орджоникидзе, 100-В
+                            <span> <br></span>
+                            <span><strong>Тел.:</strong>+375(225)72-88-50</span>
+                            <span><strong>Fax:</strong>+375(225)72-88-31</span>
+                            <span><strong>Email:</strong><a
+                                    href="mailto:bobruisk-pmk@tut.by">bobruisk-pmk@tut.by</a></span>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- content close -->
+
+    <!-- footer begin -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="span6">
+                    &copy; 2021 Бобруйская ПМК<br>
+                    Тел.: +375(225)72-88-50<br>
+                    Email: bobruisk-pmk@tut.by<br>
+                </div>
+                <div class="span6">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="gallery.html">Наши работы</a></li>
+                            <li><a href="zayavka.html">Обратная связь</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
